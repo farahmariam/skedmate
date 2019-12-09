@@ -1,0 +1,109 @@
+.bold10 {width:600px; font-size:10pt; font-family:verdana,arial,serif; text-align:left; 
+     font-weight:bold;}     
+.pt8 {width:100px; font-size:8pt; font-family:verdana,arial,serif; text-align:center;}
+.textStyle {font-size:8pt; font-family:verdana,arial,serif; text-align:center;}
+  
+     
+      * { padding: 0; margin: 0; }
+  table.cruises { 
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 11px;
+    cellspacing: 0; 
+    border-collapse: collapse; 
+    width:1300px;    
+    }
+  table.cruises td { 
+    border-left: 1px solid #999; 
+    border-top: 1px solid #999;  
+    padding: 2px 4px;
+    }
+    
+ 
+    
+    
+    
+  table.cruises tr:first-child td {
+    border-top: none;
+  }
+  table.cruises th { 
+  	
+  	border-top: 2px solid #999; 
+    border-left: 1px solid #999; 
+   
+    background: #6b6164;
+    color: white;
+    font-variant: small-caps;
+    }
+  table.cruises td { background: #eee; overflow: hidden; }
+  
+  div.scrollableContainer { 
+    position: relative; 
+    width: 1300px; 
+   
+    margin: 10px;    
+    border: 3px solid #999;
+    background: #6b6164;
+    }
+  div.scrollingArea { 
+  
+    height: 500px; 
+    overflow: auto; 
+    
+    }
+
+  table.scrollable  tr thead {
+    left: -1px; top: 0;
+    position: relative;
+    
+    }
+   
+ 
+    
+  
+ 
+  
+ table.cruises .name     div { width: 108px; padding: 4px 4px; }
+ 
+ table.cruises .th-inner     div { position: absolute; }
+
+
+ 
+ 
+ table.cruises td.name     {width: 108px; padding: 0px 4px;background: #6b6164; color: white; position:absolute; }  
+  
+ 
+  
+  
+table.cruises td.tdOnShift{background:#bbfed7;}
+table.cruises td.tdTraining{background:#dcf5f3;}
+table.cruises td.tdNA{background:#f78572;}
+table.cruises td.tdOffShift{background:#d5dbdb;}
+table.cruises td.tdBIC{background:#f6ddcc;}
+table.cruises td.tdWOP{background:#fef9e7;}
+table.cruises td.tdWOPLIEU{background:#fef9e7;}
+table.cruises td.tdWITHDRAW{background:#98858c;}
+
+
+table.cruises td.tdOnShiftWeekend{background:#bbfed7;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdTrainingWeekend{background:#dcf5f3;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdNAWeekend{background:#f78572;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdOffShiftWeekend{background:#d5dbdb;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdBICWeekend{background:#f6ddcc;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdWOPWeekend{background:#fef9e7;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdWOPLIEUWeekend{background:#fef9e7;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+table.cruises td.tdWITHDRAWWeekend{background:#98858c;border-width:1px; border-spacing:0px; border-style:solid; border-color:black;}
+   
+
+
+
+
+
+table.cruises td.tdOnShiftPublicHoliday{background:#bbfed7;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdTrainingPublicHoliday{background:#dcf5f3;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdNAPublicHoliday{background:#f78572;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdOffShiftPublicHoliday{background:#d5dbdb;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdBICPublicHoliday{background:#f6ddcc;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdWOPPublicHoliday{background:#fef9e7;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdWOPLIEUPublicHoliday{background:#fef9e7;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+table.cruises td.tdWITHDRAWPublicHoliday{background:#98858c;border-width:2px; border-spacing:0px; border-style:solid; border-color:#8e44ad;}
+     
