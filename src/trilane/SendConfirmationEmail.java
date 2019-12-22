@@ -65,8 +65,11 @@ public class SendConfirmationEmail extends HttpServlet {
 			
 			//user name and password of email account from which mail has to be sent.
 			
-			String fromEmail = "resourcemailer@gmail.com";
-			String fromPassword = "resource_mailer_2016";
+			//String fromEmail = "resourcemailer@gmail.com";
+			//String fromPassword = "resource_mailer_2016";
+			
+			String fromEmail = "selectivetestsmail@gmail.com";
+			String fromPassword = "testSelective123";
 			
 			String toEmail = objAdmin.getAdminEmail();
 			
@@ -125,7 +128,10 @@ public class SendConfirmationEmail extends HttpServlet {
 			
 			mailbody.append("<tr>");
 			mailbody.append("<th colspan='2'>");
-			mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://localhost/skedmate/confirm?companyid=");
+			//mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://localhost/skedmate/confirm?companyid=");
+			
+			//for gcp server
+			mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://35.244.85.178:8080/skedmate/confirm?companyid=");
 			
 			mailbody.append(objCompany.getCompanyLogin());	
 			mailbody.append("' title='Click here to confirm and login'> Confirm and Login </a> ");
@@ -149,7 +155,9 @@ public class SendConfirmationEmail extends HttpServlet {
 		catch(Exception ex)
 		{
 			session.setAttribute("errormessage", "Error occured when connecting to smtp host to send confirmation email");
-			System.out.println("Error occured while sending confirmation email.." + ex.toString());
+			System.out.println("Error occured while sending confirmation email.." + ex.toString()); 
+		
+			ex.printStackTrace(System.out);
 		}
 		
 		

@@ -56,7 +56,11 @@ public class ConfirmCompany extends HttpServlet {
 			
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			String databaseUrl = "jdbc:mysql://localhost:3306/company?useSSL=false";
+			//String databaseUrl = "jdbc:mysql://localhost:3306/company?useSSL=false";
+			
+			String databasePath = context.getInitParameter("data-url");
+			String databaseUrl = databasePath + "Company?useSSL=false";
+			
 			String databaseUser = context.getInitParameter("data-user");
 			String databasePwd = context.getInitParameter("data-pwd");
 			connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);

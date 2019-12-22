@@ -209,18 +209,26 @@ public class CreateDatabase extends HttpServlet {
 				//save company details
 				boolean isCompanySaved = objCommonDatabase.saveCompanyDetails(companyObj, context, objAdmin, session);
 				
+				System.out.println("saved company " + isCompanySaved);
+				
 				//if company details saved, save rest of the details, else forward to error page
 				if(isCompanySaved)
 				{
 					//create new database
 					boolean isDatabaseCreated = objCommonDatabase.createCompanyDatabase(companyObj, context, session,objAdmin);
+					
+					//System.out.println("created database " + isDatabaseCreated);
 					if(isDatabaseCreated)
 					{
 						//create tables
 						boolean TablesCreated = objCommonDatabase.createTables(companyObj,teamList,context,session,objAdmin);
+						
+						//System.out.println("created tables " + TablesCreated);
 						if(TablesCreated)
 						{
 							boolean dataEntered  = objCommonDatabase.enterDataInTables(companyObj, teamList, statusList, objAdmin, context,session);
+							
+							//System.out.println("data entered " + dataEntered);
 							
 							if(dataEntered)
 							{

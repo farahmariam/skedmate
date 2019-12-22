@@ -62,8 +62,11 @@ public class CheckDatabaseName extends HttpServlet {
 		try
 		{
 				Class.forName("com.mysql.jdbc.Driver");
-				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/?useSSL=false";
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath.concat("?useSSL=false") ;
+				System.out.println("database url in check databasename: " + databaseUrl);
+				
+				//String databaseUrl = "jdbc:mysql://scheduler:3306/?useSSL=false";
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				con =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);

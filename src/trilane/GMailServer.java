@@ -29,19 +29,38 @@ public class GMailServer extends javax.mail.Authenticator {
 		this.user = user;
 		this.password = password;
 		Properties props = new Properties();
+		
+	
 		props.setProperty("mail.transport.protocol", "smtp");
 		
 		props.setProperty("mail.smtp.host", mailhost);
 		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.port", "587");
+		
+		
+	    props.put("mail.smtp.port", "587");
+		//props.put("mail.smtp.port", "465");
+		
+		
 		props.put("mail.smtp.socketFactory.port", "465");
+		
+		
 		props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+		//props.put("mail.smtps.ssl.protocols","TLSv1.2");
+		java.security.Security.setProperty("jdk.tls.disabledAlgorithms","");
+		
+		
+		
 		props.put("mail.smtp.starttls.enable","true");
 		
+		//added for gcp
+		//props.put("mail.smtp.ssl.trust", mailhost);
+		
+		
+	
 		props.put("mail.smtp.debug", "true");
 		props.put("mail.smtp.socketFactory.fallback", "false");
-		props.setProperty("mail.smtps.quitwait", "false");
-		//session = Session.getDefaultInstance(props, this);
+		props.setProperty("mail.smtps.quitwait", "false"); 
+		
 		session = Session.getInstance(props,this);
 		
 	}

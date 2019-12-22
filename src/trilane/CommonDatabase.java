@@ -43,7 +43,14 @@ public class CommonDatabase
 		{
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + "Company?useSSL=false";
+				
+				
+						
+						
+				//String databaseUrl = "jdbc:mysql://scheduler:3306/Company?useSSL=false";
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -155,8 +162,12 @@ public class CommonDatabase
 		try
 		{
 				Class.forName("com.mysql.jdbc.Driver");
-				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/?useSSL=false";
+				
+				//String databaseUrl = "jdbc:mysql://scheduler:3306/?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + "?useSSL=false";
+				
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -233,7 +244,11 @@ public class CommonDatabase
 		{
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + databaseName + "?useSSL=false";
+				
+				//String databaseUrl = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -376,7 +391,11 @@ public class CommonDatabase
 			
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
+				//String databaseUrl = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + databaseName + "?useSSL=false";
+				
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -527,7 +546,11 @@ public class CommonDatabase
 		{
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + "Company?useSSL=false";
+				
+				//String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -581,7 +604,11 @@ public class CommonDatabase
 		{
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				//String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + "Company?useSSL=false";
+				
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -667,7 +694,11 @@ public class CommonDatabase
 		{
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				//String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + "Company?useSSL=false";
+				
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);
@@ -721,7 +752,11 @@ public class CommonDatabase
 		{
 				Class.forName("com.mysql.jdbc.Driver");
 				//String databaseUrl = context.getInitParameter("data-url");
-				String databaseUrl = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
+				
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl = databasePath + databaseName + "?useSSL=false";
+				
+				//String databaseUrl = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				connection =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);

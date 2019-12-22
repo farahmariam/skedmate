@@ -1,11 +1,6 @@
 package trilane;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.*;
 
 import javax.servlet.ServletContext;
@@ -66,7 +61,10 @@ public class checkAdminEmailExists extends HttpServlet {
 		try
 		{
 				Class.forName("com.mysql.jdbc.Driver");
-				String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+				String databasePath = context.getInitParameter("data-url");
+				String databaseUrl =databasePath + "Company?useSSL=false";
+						
+				//String databaseUrl = "jdbc:mysql://localhost:3306/Company?useSSL=false";
 				String databaseUser = context.getInitParameter("data-user");
 				String databasePwd = context.getInitParameter("data-pwd");
 				con =(Connection) DriverManager.getConnection(databaseUrl, databaseUser, databasePwd);

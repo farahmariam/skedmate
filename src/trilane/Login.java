@@ -73,8 +73,13 @@ public class Login extends HttpServlet {
 		{
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			String databaseUrlforLogin = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
-			String databaseUrlforConfirmation = "jdbc:mysql://localhost:3306/Company?useSSL=false";
+			String databasePath = context.getInitParameter("data-url");
+			
+			String databaseUrlforLogin = databasePath + databaseName  +"?useSSL=false";
+			String databaseUrlforConfirmation = databasePath + "Company?useSSL=false";
+			
+			//String databaseUrlforLogin = "jdbc:mysql://localhost:3306/" + databaseName  +"?useSSL=false";
+			//String databaseUrlforConfirmation = "jdbc:mysql://localhost:3306/Company?useSSL=false";
 			
 			String databaseUser = context.getInitParameter("data-user");
 			String databasePwd = context.getInitParameter("data-pwd");
