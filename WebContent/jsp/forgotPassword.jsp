@@ -8,7 +8,7 @@
 <title>Recover login details</title>
 </head>
 <body>
-
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 <form name="forgotpassword" method="post" action="${pageContext.request.contextPath}/EmailAdminLoginCredentials" onsubmit="return checkEmail()" >
             <center>
             <table border="1" width="50%" cellpadding="5">

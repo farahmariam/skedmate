@@ -84,7 +84,7 @@ function goTo()
 }
 </script>
 <style>
-table.fixed {table-layout:fixed; width:190px;}/*Setting the table width is important!*/
+table.fixed {table-layout:fixed; width:90px;}/*Setting the table width is important!*/
 table.fixed td {overflow:hidden;}/*Hide text outside the cell.*/
 table.fixed td:nth-of-type(1) {width:20px;}/*Setting the width of column 1.*/
 table.fixed td:nth-of-type(2) {width:30px;}/*Setting the width of column 2.*/
@@ -153,7 +153,7 @@ else
 %>
 <body  >
 <form name="frm" method="post">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="headingTable">
 <tr>
 	    <td width="90%" class="two">
 	     <h3 class="indexSettings">Welcome, <%=userFullNameFromSession  %>.</h3>
@@ -192,7 +192,7 @@ else
 </table>
 
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
   <tr>
     <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
     
@@ -249,7 +249,7 @@ else
   </tr>
   <tr>
   <div id="calendarId" >
-    <td><table align="center" border="1" cellpadding="3" cellspacing="0" width="100%">
+    <td><table align="center" border="1" cellpadding="3" cellspacing="0" width="100%" >
       <tbody>
         <tr>
           <th bgcolor="#c6bfc2">Sun</th>

@@ -1,5 +1,10 @@
 @CHARSET "ISO-8859-1";
 
+
+table.headingTable {border-width:0px; border-spacing:0px; border-style:solid; 
+     border-color:black; border-collapse:separate; background-color:#f7f0f7;}
+     
+  
 table.tabborder {border-width:1px; border-spacing:0px; border-style:solid; 
      border-color:black; border-collapse:separate; background-color:white;}
 table.tabborder th,
@@ -20,7 +25,7 @@ table.td:cellWeekend{background-color:#f0fafa;}
 table.td:.cellPublicHoliday{background-color:#fdd2cc;border-width:2px; border-spacing:0px; border-style:solid; border-color:red;}
      
      
-.cellWeekend{background-color:#f0fafa;}
+.cellWeekend{background-color:#f7f0f7;}
 
 .cellPublicHoliday{background-color:#fdd2cc;border-width:2px; border-spacing:0px; border-style:solid; border-color:red;}
      
@@ -195,6 +200,18 @@ font-size:11px;
     -webkit-border-radius:10px;
     background-color:#c6bfc2;
 }
+.containerwhite {
+    width:1000px;
+    margin:0 auto;
+    border:5px solid #fff;
+    box-shadow:0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:white;
+}
 
 
 .imagemainbody {
@@ -337,11 +354,11 @@ a.settinglink:link{color:black;background:#f0e598;border-width:1px;border-color:
   } 
 }
 
-select.options {
+select.options1 {
   font: 400 12px/1.3 "verdana", sans-serif;
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid black;
+  border: 2px solid black;
   line-height: 1;
   outline: 0;
   color: black;
@@ -356,3 +373,44 @@ select.options {
   background-size: 1px 100%, 20px 20px, 20px 20px, 20px 60%;
   background-position: right 20px center, right bottom, right bottom, right bottom;   
 }
+
+select {
+background-image:url(../images/arrow.png);
+background-repeat:no-repeat;
+background-position:100px;
+width:150px;
+padding:5px;
+margin-top:2px;
+font-family:Cursive;
+line-height:1;
+border-radius:1px;
+background-color:#f7f0f7;
+color:black;
+font-size:14px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none
+}
+
+select.options {
+background-image:url(../images/arrow.png);
+background-repeat:no-repeat;
+background-position:100px;
+width:150px;
+padding:5px;
+margin-top:2px;
+font-family:Cursive;
+line-height:1;
+border-radius:1px;
+background-color:white;
+color:black;
+font-size:16px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none
+}
+select:hover {
+color:#b00c38
+}
+
+

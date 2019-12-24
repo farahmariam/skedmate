@@ -14,8 +14,9 @@
 </head>
 
 
+<body style="background-color:#f7f0f7">
 
-
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 
 
 <%
@@ -56,9 +57,9 @@ session.setAttribute("year", year);
 
 
 
-<body >
 
-<div class="container">
+
+<div class="containerwhite">
 
     <div class="header  ">
       <h3 class="settingHeader" >LONG STATUS ENTRY</h3> 
@@ -66,12 +67,12 @@ session.setAttribute("year", year);
     
     <tbody>
     
-  	<div class="mainbody1" id="formdiv"> 
+  	<div  id="formdiv"> 
   	
   	<form name="resourceform" method="post" action="#"  onsubmit="saveStatus();return false;" >
   	
   	
-    <table border="0" width="100%" cellpadding="5"> 
+    <table style="background-color:white" border="0" width="100%" cellpadding="5"> 
      
 		
 		  
@@ -120,7 +121,7 @@ session.setAttribute("year", year);
 		<div id="dateinputs">
 			<div id="fromdate">
 			
-				 <table border="0" width="100%" cellpadding="5"> 
+				 <table style="background-color:white" border="0" width="100%" cellpadding="5"> 
 					 <tr>
 					    <td   class="index">From:</td>
 					    <td><input type="date" name="fromdate" id="fromdatepicker"  /> </td>
@@ -129,7 +130,7 @@ session.setAttribute("year", year);
 			
 			</div>
 			<div id="todate">
-				<table border="0" width="100%" cellpadding="5"> 
+				<table style="background-color:white" border="0" width="100%" cellpadding="5"> 
 				 <tr>
 				    <td   class="index">To:</td>
 				    <td><input type="date" name="todate" id="todatepicker"   /> </td>
@@ -140,7 +141,7 @@ session.setAttribute("year", year);
 			 
 		</div>
 		
-		 <table border="0" width="60%" cellpadding="5"> 
+		 <table style="background-color:white" border="0" width="60%" cellpadding="5"> 
 			 <tr>
 			    
 

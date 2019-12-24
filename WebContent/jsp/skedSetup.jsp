@@ -8,6 +8,8 @@
 <title>Setup your Scheduling project</title>
 </head>
 <body onload="setPreviousTeamCount()">
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
+
 <form name="settingform" method="post" action="${pageContext.request.contextPath}/CreateDatabase" onsubmit="return validate()" onkeypress="stopSubmitOnEnter(window.event);">
         
 <div class="container">

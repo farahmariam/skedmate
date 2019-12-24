@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../css/scheduleStyles.css">
 </head>
 <body onload="hideReportAndDateDiv()" >
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 
 <div class="container">
 

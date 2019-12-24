@@ -2,7 +2,8 @@
 <head>
 <link rel="stylesheet" href="../css/scheduleStyles.css">
 </head>
-<body>
+<body style="background-color:#f7f0f7">
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 <%
 
 String errormessage = "";

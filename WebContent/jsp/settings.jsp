@@ -48,7 +48,9 @@ else
 %>
 
 <body onload="hideElements()" >
-
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
+<div class="header">
+</div>
  <div class="header">
      <a href="showCalendar.jsp" class="settingBoxHeader"> Go to Calendar</a>
     </div>

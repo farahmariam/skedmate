@@ -17,7 +17,8 @@
 <title>Update Resource details</title>
 <link rel="stylesheet" href="../css/scheduleStyles.css">
 </head>
-<body >
+<body style="background-color:#f7f0f7">
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 
 <%
 	int userId = -1;
@@ -110,7 +111,7 @@
 
 <form name="editresource" method="post" action="${pageContext.request.contextPath}/SaveResourceDetails" onsubmit="return validateForm()" onreset="clearSpans()">
             <center>
-            <table border="1" width="50%" cellpadding="5">
+            <table style="background-color:white" border="1" width="50%" cellpadding="5">
                 <thead>
                     <tr>
                         <th class="backcolourpurple bold8" colspan="2">Update resource details here</th>

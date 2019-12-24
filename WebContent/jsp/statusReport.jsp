@@ -3,6 +3,7 @@
   
 <html> 
 <head>
+<link rel="stylesheet" href="../css/scheduleStyles.css">
 <style type="text/css">
 
 h3 {
@@ -83,7 +84,7 @@ if (strEndDate != null && strEndDate.length( ) > 0)
 
 <form name="report" method="post" action="statusReport.jsp">
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="headingTable">
   <tr>
 	  	 <td width="10%" align="right" > <input type="button"  name="back" value="Previous" onClick="goBack()"  />
 	    

@@ -29,7 +29,8 @@ else
 {
 	
 %>
-<body>
+<body style="background-color:#f7f0f7">
+<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 
 <%
 

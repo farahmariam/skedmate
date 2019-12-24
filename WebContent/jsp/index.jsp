@@ -7,12 +7,13 @@
 <title>Login to access Schedule</title>
 <link rel="stylesheet" href="../css/scheduleStyles.css">
 </head>
-<body>
+<body  style="background-color:#f7f0f7">
 
 <form name="login" method="post" action="${pageContext.request.contextPath}/Login" onsubmit="return validateForm()">
             <center>
 <img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
-<table cellspacing="2" cellpadding="5" border="2" width="500">
+
+<table style="background-color:white" cellspacing="2" cellpadding="5" border="2" width="500">
 				<thead class="backcolourpurple bold8">
                     <tr>
                         <th colspan="2">Login Here</th>
@@ -47,6 +48,7 @@
                         <td ><a href='skedSetup.jsp' class="three">First Time User? Please Setup Project.</a></td>
                     </tr>
 			</table>
+			
             </center>
         </form>
 
