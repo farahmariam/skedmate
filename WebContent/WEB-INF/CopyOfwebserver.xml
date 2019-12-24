@@ -37,21 +37,21 @@
     <description>Login url </description>
     <param-name>login-url</param-name>
     <param-value>
-         http://localhost/skedmate/login
+         http://35.244.85.178/skedmate/login
      </param-value>
   </context-param>
   <context-param>
     <description>Database Connection url string</description>
     <param-name>data-url</param-name>
     <param-value>
-       jdbc:mysql://scheduler:3306/ 
+       jdbc:mysql://localhost:3306/ 
      </param-value>
   </context-param>
   <context-param>
     <description>Database connection user name </description>
     <param-name>data-user</param-name>
     <param-value>
-        farah
+        root
      </param-value>
   </context-param>
   <context-param>
