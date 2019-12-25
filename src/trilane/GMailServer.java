@@ -53,7 +53,7 @@ public class GMailServer extends javax.mail.Authenticator {
 		props.put("mail.smtp.starttls.enable","true");
 		
 		//added for gcp
-		//props.put("mail.smtp.ssl.trust", mailhost);
+		props.put("mail.smtp.ssl.trust", mailhost);
 		
 		
 	

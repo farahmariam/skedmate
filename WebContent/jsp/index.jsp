@@ -8,10 +8,12 @@
 <link rel="stylesheet" href="../css/scheduleStyles.css">
 </head>
 <body  style="background-color:#f7f0f7">
-
+  
 <form name="login" method="post" action="${pageContext.request.contextPath}/Login" onsubmit="return validateForm()">
             <center>
 <img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
+
+ <h3 class="settingBoxHeaderSmall"><a href='HelpForIndex.jsp' title='Click here for help'> Info about Skedmate! </a></h3>
 
 <table style="background-color:white" cellspacing="2" cellpadding="5" border="2" width="500">
 				<thead class="backcolourpurple bold8">

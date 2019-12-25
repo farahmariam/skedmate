@@ -212,6 +212,18 @@ font-size:11px;
     -webkit-border-radius:10px;
     background-color:white;
 }
+.containerwhite1 {
+    width:1500px;
+    margin:0 auto;
+    border:5px solid #fff;
+    box-shadow:0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:white;
+}
 
 
 .imagemainbody {
@@ -249,6 +261,14 @@ font-size:11px;
 	text-align:left;
     height: 30px;
     padding: 3px;
+    
+    
+}
+
+.headerhelp {
+	text-align:center;
+    height: 60px;
+    padding: 6px;
     
     
 }

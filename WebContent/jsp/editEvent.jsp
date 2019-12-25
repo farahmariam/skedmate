@@ -369,10 +369,11 @@
 			
 			
 			%>
-			
+			<body style="background-color:#f7f0f7">
+			<img src="../images/skedmate3.jpg"  style="width:1500px;height:180px;">
 			<form name="edit" method="post" action="${pageContext.request.contextPath}/SaveEditedEvent"   >
             <center>
-            <table border="1" width="50%" cellpadding="5">
+            <table style="background-color:white" border="1" width="50%" cellpadding="5">
                 <thead>
                     <tr>
                         <th class="backcolourpurple bold8" colspan="2">Edit Status of <%= userFullName %> on <%=monthName %>  <%=day %> , <%= year %> (<%=dayName %>)</th>
@@ -495,7 +496,7 @@
 		
 	
 %>
-<body>
+
 	
 </body>
 

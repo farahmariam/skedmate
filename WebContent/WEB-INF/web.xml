@@ -65,7 +65,7 @@
     <description>Location of log file </description>
     <param-name>logfile-path</param-name>
     <param-value>
-       /skedmate/logs
+       /skedmate/logs/
      </param-value>
   </context-param>
 </web-app>

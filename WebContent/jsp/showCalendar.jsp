@@ -159,18 +159,16 @@ else
 	     <h3 class="indexSettings">Welcome, <%=userFullNameFromSession  %>.</h3>
 	    </td>
 	    
-	    
-	    
+	   
 	    <td>
 	    <select name="adminmenu" id ="adminmenu" onchange="goToNewPage()" class="options">
 	    
 	    <option value=""  selected> <h4 > Actions</h4> </option>
-	    <option value="resourceDetails.jsp?userid=<%= userId %>&month=<%=iMonth %>&year=<%=iYear %>"> Manage Account </option>
-	    <option value="LongStatusEntryResource.jsp?userid=<%= userId %>&&userName=<%=userFullNameFromSession%>&month=<%=iMonth %>&year=<%=iYear %>"> Edit Multiple days </option>
+	    <option value="resourceDetails.jsp?userid=<%= userId %>&month=<%=iMonth %>&year=<%=iYear %>"> Edit personal details  </option>
+	    <option value="LongStatusEntryResource.jsp?userid=<%= userId %>&&userName=<%=userFullNameFromSession%>&month=<%=iMonth %>&year=<%=iYear %>"> Edit status for multiple days </option>
 	  
 	    
-	    <option value="statusReport.jsp">ScheduleIT View </option>
-	    <option value="Reports.jsp">View Reports </option>
+	   
 	    
 	    
 	    <%
@@ -178,17 +176,24 @@ else
 	    {
 	    	
 	    %>
-	     <option value="settings.jsp?month=<%=iMonth %>&year=<%=iYear %>"> Settings </option>
+	     <option value="settings.jsp?month=<%=iMonth %>&year=<%=iYear %>"> Skedmate Settings </option>
 	     <option value="showLog.jsp">Show Log </option>
 	    <% 
 	    }
 	    	    	
 	    %>
+	    <option value="statusReport.jsp">Worker Scheduled Status View </option>
+	    <option value="Reports.jsp">View Reports </option>
 	    <option value="logout.jsp"> Log Out </option>
 	    
 	    </select>
 	    </td>
     </tr>
+    <tr>
+     <td >
+	     <h3 ><a class="settingBoxHeaderSmall" href='help.jsp' title='Click here for help'> SkedMate help </a></h3>
+	    </td>
+	  </tr>  
 </table>
 
 
