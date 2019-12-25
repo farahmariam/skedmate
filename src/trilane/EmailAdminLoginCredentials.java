@@ -107,8 +107,11 @@ public class EmailAdminLoginCredentials extends HttpServlet {
 				//now send email with the details
 				//user name and password of email account from which mail has to be sent.
 				
-				String fromEmail = "resourcemailer@gmail.com";
-				String fromPassword = "resource_mailer_2016";
+				//String fromEmail = "resourcemailer@gmail.com";
+				//String fromPassword = "resource_mailer_2016";
+				
+				String fromEmail = "selectivetestsmail@gmail.com";
+				String fromPassword = "testSelective123";
 				
 				String toEmail = emailId;
 				
@@ -168,8 +171,11 @@ public class EmailAdminLoginCredentials extends HttpServlet {
 				
 				mailbody.append("<tr>");
 				mailbody.append("<th colspan='2'>");
-				mailbody.append("Please click on this link to login:  <a href='http://localhost:8080/skedmate/login' title='Click here to login'> Login </a>");
+				//for windows
+				//mailbody.append("Please click on this link to login:  <a href='http://localhost:8080/skedmate/login' title='Click here to login'> Login </a>");
 				
+				// for gcp
+				mailbody.append("Please click on this link to Login:  <a href='http://35.244.85.178/skedmate/login' title='Click here to login'> Login </a>");
 				
 				mailbody.append("</th>");
 				
