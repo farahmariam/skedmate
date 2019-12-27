@@ -172,10 +172,11 @@ public class EmailAdminLoginCredentials extends HttpServlet {
 				mailbody.append("<tr>");
 				mailbody.append("<th colspan='2'>");
 				//for windows
-				mailbody.append("Please click on this link to login:  <a href='http://localhost:8080/skedmate/login' title='Click here to login'> Login </a>");
+				//mailbody.append("Please click on this link to login:  <a href='http://localhost:8080/skedmate/login' title='Click here to login'> Login </a>");
 				
 				// for gcp
 				//mailbody.append("Please click on this link to Login:  <a href='http://35.244.85.178/skedmate/login' title='Click here to login'> Login </a>");
+				mailbody.append("Please click on this link to Login:  <a href='http://trilanetech.tk/skedmate/login' title='Click here to login'> Login </a>");
 				
 				mailbody.append("</th>");
 				

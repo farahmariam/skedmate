@@ -1,10 +1,90 @@
 <%@page import="java.util.*, java.text.*,  java.sql.* , trilane.CommonDatabase, trilane.StatusObject"%> 
 <%@ include file="common.jsp" %>
-  
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html> 
 <head>
-<link rel="stylesheet" href="../css/scheduleStyles.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>ScheduleIT</title>
+<link rel="stylesheet" type="text/css" href="../css/report.css" />
+
 <style type="text/css">
+.bold10 {width:600px; font-size:10pt; font-family:verdana,arial,serif; text-align:left; 
+     font-weight:bold;}     
+.pt8 {width:100px; font-size:8pt; font-family:verdana,arial,serif; text-align:center;}
+.textStyle {font-size:8pt; font-family:verdana,arial,serif; text-align:center;}
+  
+     
+      * { padding: 0; margin: 0; }
+  table.cruises { 
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 11px;
+    cellspacing: 0; 
+    border-collapse: collapse; 
+    width:1300px;    
+    }
+  table.cruises td { 
+    border-left: 1px solid #999; 
+    border-top: 1px solid #999;  
+    padding: 2px 4px;
+    }
+    
+ 
+    
+    
+    
+  table.cruises tr:first-child td {
+    border-top: none;
+  }
+  table.cruises th { 
+  	
+  	border-top: 2px solid #999; 
+    border-left: 1px solid #999; 
+   
+    background: #6b6164;
+    color: white;
+    font-variant: small-caps;
+    }
+  table.cruises td { background: #eee; overflow: hidden; }
+  
+  div.scrollableContainer { 
+    position: relative; 
+    width: 1300px; 
+   
+    margin: 10px;    
+    border: 3px solid #999;
+    background: #6b6164;
+    }
+  div.scrollingArea { 
+  
+    height: 500px; 
+    overflow: auto; 
+    
+    }
+
+  table.scrollable  tr thead {
+    left: -1px; top: 0;
+    position: relative;
+    
+    }
+   
+ 
+    
+  
+ 
+  
+ table.cruises .name     div { width: 108px; padding: 4px 4px; }
+ 
+ table.cruises .th-inner     div { position: absolute; }
+
+
+ 
+ 
+ table.cruises td.name     {width: 108px; padding: 0px 4px;background: #6b6164; color: white; position:absolute; }  
+  
+ 
 
 h3 {
     color: red;
@@ -14,11 +94,11 @@ h3 {
 }
 
 </style>
-<title>ScheduleIT</title>
-<link rel="stylesheet" href="../css/report.css">
+
+
 </head>
 
-<body bgcolor="white"> 
+<body> 
 <%
 
 int cntMonth = 2;
@@ -84,7 +164,7 @@ if (strEndDate != null && strEndDate.length( ) > 0)
 
 <form name="report" method="post" action="statusReport.jsp">
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0" class="headingTable">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
   <tr>
 	  	 <td width="10%" align="right" > <input type="button"  name="back" value="Previous" onClick="goBack()"  />
 	    
@@ -496,11 +576,12 @@ else if(tableStartDate!=null && tableEndDate!=null)
 		
 		%>
 			</tbody>
+			</table>
 			</div>
 		</div>
 
 	
-</table>
+
  
 	
 </body>
