@@ -129,11 +129,11 @@ public class SendConfirmationEmail extends HttpServlet {
 			mailbody.append("<tr>");
 			mailbody.append("<th colspan='2'>");
 			//for windows code
-			//mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://localhost/skedmate/confirm?companyid=");
+			mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://localhost/skedmate/confirm?companyid=");
 			
 			//for gcp server
 			//mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://35.244.85.178/skedmate/confirm?companyid=");
-			mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://trilanetech.tk/skedmate/confirm?companyid=");
+			//mailbody.append("Please click on this link to confirm and start using the application:  <a href='http://trilanetech.tk/skedmate/confirm?companyid=");
 			
 			
 			mailbody.append(objCompany.getCompanyLogin());	
