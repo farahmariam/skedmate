@@ -17,7 +17,16 @@
     <servlet-name>WelcomeServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
-   
+  
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>trilane.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+ <!--   
   <servlet>
     <servlet-name>HomeServlet</servlet-name>
     <servlet-class>trilane.SkedmateHomeServlet</servlet-class>
@@ -26,7 +35,7 @@
     <servlet-name>HomeServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  
+ -->  
   <servlet>
     <servlet-name>SendConfirmationEmailServlet</servlet-name>
     <servlet-class>trilane.SendConfirmationEmail</servlet-class>
@@ -55,7 +64,7 @@
     <description>Login url </description>
     <param-name>login-url</param-name>
     <param-value>
-         http://localhost/skedmate/login
+         http://trilanetech.tk/skedmate/login
      </param-value>
   </context-param>
   <context-param>
@@ -69,7 +78,7 @@
     <description>Database connection user name </description>
     <param-name>data-user</param-name>
     <param-value>
-      farah
+      root
      </param-value>
   </context-param>
   <context-param>
@@ -83,7 +92,7 @@
     <description>Location of log file </description>
     <param-name>logfile-path</param-name>
     <param-value>
-       C:\Skedmate\
+       /skedmate/logs/
      </param-value>
   </context-param>
 </web-app>

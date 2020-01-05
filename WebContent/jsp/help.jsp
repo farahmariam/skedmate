@@ -68,13 +68,13 @@
 						</td>
 					
 					 <td><img src="../images/calendar_click.jpg"  style="width:500px;height:200px;"></td>
-					
+					<td> </td>
 					 </tr>
 					 <tr>
                         <td class="index">After that, you can click on your name to edit your status!</td>
 					
-					 <td><img src="../images/clickheretoedit.jpg"  style="width:500px;height:200px;"><img src="../images/editstatusform.jpg"  style="width:500px;height:200px;"></td>
-					
+					 <td><img src="../images/clickheretoedit.jpg"  style="width:500px;height:200px;"></td>
+					<td><img src="../images/editstatusform.jpg"  style="width:500px;height:200px;"> </td>
 					 </tr>
                    
 					

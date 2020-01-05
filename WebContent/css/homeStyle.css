@@ -1,0 +1,74 @@
+@CHARSET "ISO-8859-1";
+
+.container {
+    width:1000px;
+    margin:0 auto;
+    border:5px solid #fff;
+    box-shadow:0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:#e3d5db;
+}
+
+.header {
+	text-align:center;
+    height: 30px;
+    padding: 3px;
+    
+    
+}
+.footer{
+	text-align:center;
+    height: 10px;
+    padding: 3px;
+    
+    
+}
+
+.settingHeader {font-size:10pt; font-family:verdana,arial,serif; text-align:center; 
+     font-weight:bold; }
+     
+.settingBoxHeader {color:black;font-size:10pt; font-family:verdana,arial,serif; text-align:center; 
+     font-weight:bold;background:#c6bfc2;  border:5px solid #fff;
+    box-shadow:0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px; }
+    
+    
+    .settingBoxHeaderSmall {color:black;font-size:9pt; font-family:verdana,arial,serif; text-align:center; 
+     font-weight:bold;background:#c6bfc2;  border:5px solid #fff;
+    box-shadow:0px 1px 3px #292929;
+    -moz-box-shadow: 0px 1px 3px #292929;
+    -webkit-box-shadow: 0px 1px 3px #292929;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px; }
+    
+    
+    .settingBoxText {color:black;font-size:8pt; font-family:verdana,arial,serif; text-align:center; 
+     font-weight:bold;background:#c6bfc2;  border:5px solid #fff;
+    box-shadow:0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px; }
+    
+    .mbr-fullscreen {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  min-height: 10vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

@@ -52,7 +52,7 @@
 			</table>
 			
             </center>
- <h3 class="settingBoxHeaderSmall"><a href='http://trilanetech.tk' title='Click here to go TriLane technologies home page'> Developed by TriLane Technologies </a></h3>
+ <h3 class="settingBoxHeaderSmall"><a href='http://trilanetech.tk' title='Click here to go TriLane technologies home page'> By TriLane Technologies </a></h3>
 
         </form>
 
