@@ -64,7 +64,7 @@
     <description>Login url </description>
     <param-name>login-url</param-name>
     <param-value>
-         http://localhost/skedmate/login
+         http://trilanetech.tk/skedmate/login
      </param-value>
   </context-param>
   <context-param>
@@ -78,7 +78,7 @@
     <description>Database connection user name </description>
     <param-name>data-user</param-name>
     <param-value>
-      farah
+      root
      </param-value>
   </context-param>
   <context-param>
@@ -92,7 +92,7 @@
     <description>Location of log file </description>
     <param-name>logfile-path</param-name>
     <param-value>
-       C:\Skedmate\
+     /skedmate/logs/
      </param-value>
   </context-param>
 </web-app>

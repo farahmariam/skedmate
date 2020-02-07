@@ -214,7 +214,8 @@ function populateResourceSelectBox()
 				}
 				else
 				{
-					resTextContent = resLoginName + " [ " + resFullName + " ] ";
+					//resTextContent = resLoginName + " [ " + resFullName + " ] ";
+					resTextContent = resFullName;
 				
 				}
 				element.textContent = resTextContent;
